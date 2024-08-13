@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Gallery</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .gal{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15rem;
+            
+        }
+        .parent{
+            background-image: url(https://i.etsystatic.com/41725820/r/il/fc501a/5713598629/il_570xN.5713598629_1upn.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+             border: 2px solid beige; 
+        }
+        h1{        
+         text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <h1>Gallery</h1>
+    <div class="gal">
+        <img class="i1" src="https://w0.peakpx.com/wallpaper/855/936/HD-wallpaper-lord-krishna-with-radha-lord-krishna-radha-krishna-kanha-god-hare-krishna-thumbnail.jpg" alt="imag1">
+        <img src="https://w0.peakpx.com/wallpaper/855/936/HD-wallpaper-lord-krishna-with-radha-lord-krishna-radha-krishna-kanha-god-hare-krishna-thumbnail.jpg" alt="image2">
+        <img src="https://w0.peakpx.com/wallpaper/855/936/HD-wallpaper-lord-krishna-with-radha-lord-krishna-radha-krishna-kanha-god-hare-krishna-thumbnail.jpg" alt="image3">
+        <img class="i1" src="https://w0.peakpx.com/wallpaper/855/936/HD-wallpaper-lord-krishna-with-radha-lord-krishna-radha-krishna-kanha-god-hare-krishna-thumbnail.jpg" alt="imag1">
+        <img src="https://w0.peakpx.com/wallpaper/855/936/HD-wallpaper-lord-krishna-with-radha-lord-krishna-radha-krishna-kanha-god-hare-krishna-thumbnail.jpg" alt="image2">
+        <img src="https://w0.peakpx.com/wallpaper/855/936/HD-wallpaper-lord-krishna-with-radha-lord-krishna-radha-krishna-kanha-god-hare-krishna-thumbnail.jpg" alt="image3">
+    </div>
+    </div>
+</body>
+</html>

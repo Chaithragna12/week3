@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Gallery</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        .gal{
+            background-image: url(./gallery.jpg);
+             height: 100vh; 
+              border: 2px solid black; 
+        }
+        .gallery{
+           background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            color: #fff;
+            justify-content: space-around;
+        }
+        h1{
+            color: navy;
+            text-align: center;
+             /* padding-top: 2rem;  */
+        }
+        .image1,.image2,.image3{
+            height: 42vh;
+            border-radius: 20px;
+        }
+        p{
+            width: 28rem;
+            /* border: 2px solid black; */
+             text-align: center;
+        }
+        .div1,.div2,.div3{
+             padding-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="gal">
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <div class="div1">
+                <img class="image1" src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga ipsam accusamus sed voluptate harum?</p>
+            </div>
+            <div class="div2">
+                <img class="image2" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=612x612&w=0&k=20&c=8xbZvMyptEaqMW46diKakhVgkPkAzBi5l7J1yveCZFk=" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga ipsam accusamus sed voluptate harum?</p>
+            </div>
+            <div class="div3">
+                <img  src="https://cdn.stocksnap.io/img-thumbs/280h/butterflies-nature_IFVYIKNJC1.jpg" alt="" class="image3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga ipsam accusamus sed voluptate harum?</p>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

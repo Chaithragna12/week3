@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Input Focus</title>
+    <style>
+        form{
+            width: 12rem;
+            height: 13rem;
+            border: 1px solid #ccc;
+            box-shadow: 10px 10px 3px #f9f9f9;
+            margin: 10rem 30rem;
+            padding: 4rem 5rem;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        .p{
+            padding-top: 25px;
+        }
+        label{
+            display: block;
+            margin-bottom: 3px;
+        }
+        input{
+             height: 20px; 
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border: 0.5px solid #ccc;
+        }
+        .button{
+            padding-left: 40px;
+            margin-top: 20px;
+        }
+        input:focus{
+            border-color:rgb(15, 0, 128);
+            background-color: rgb(128, 0, 77);
+            color: #fff;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <div class="p">
+        <div>
+            <label for="">Email:</label>
+            <input type="text" placeholder="Your Email">
+        </div>
+       <div>
+        <label for="">Password:</label>
+        <input type="password" placeholder="password">
+    
+       </div>
+      
+        <div class="button">
+            <button>Submit</button>
+        </div>
+    </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe Animations</title>
+    <style>
+        .div{
+            height: 5rem;
+            width: 5rem;
+            background-color: maroon;
+            position: absolute;
+            top: 10px;
+
+            /* border: 2px solid black; */
+            animation: movetoright 5s infinite;
+        }
+        @keyframes movetoright {
+            0%{
+                left:0;
+            }
+            100%{
+               left: 100%;
+            }
+            
+        }
+        div{
+            height: 5rem;
+            width: 5rem;
+            background-color: navy;
+            position: absolute;
+            top: 10rem;
+            /* border: 2px solid black; */
+            animation: movetoleft 5s infinite;
+        }
+        @keyframes movetoleft {
+            100%{
+                right:100%;
+            }
+            0%{
+                right: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+    <div></div>
+</body>
+</html>

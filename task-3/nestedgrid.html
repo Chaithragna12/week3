@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid Layout</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .parent{
+            display: grid;
+            /* border: 2px solid black; */
+            margin: 12rem;
+            gap: 15px;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .section{
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .header{
+            background-color: aquamarine;
+        }
+        .s1{
+            background-color: magenta;
+        }
+        .s2{
+            background-color: maroon;
+        }
+        .s3{
+            background-color: magenta;
+        }
+        .main{
+            background-color: mediumturquoise;
+        }
+        .foot{
+            background-color: midnightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">
+            <h1>heading</h1>
+        </div>
+        <div class="section">
+            <div class="s1">
+                <h1>sub1</h1>
+            </div>
+            <div class="s2">
+                <h1>sub2</h1>
+            </div> 
+            <div class="s3">
+                <h1>sub3</h1>
+            </div>
+           
+        </div>
+        <div class="main">
+            <h1>main</h1>
+        </div>
+        <div class="foot">
+            <h1>footer</h1>
+        </div>
+    </div>
+</body>
+</html>

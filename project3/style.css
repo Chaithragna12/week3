@@ -1,0 +1,80 @@
+:root{
+    --light:#fff;
+    --dark:#242424;
+    --transition:0.3s;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+} 
+h1{
+    text-align: center;
+}
+svg{
+    position: absolute;
+    width: 40px;
+    z-index: 100;
+    top: 5px;
+    left: 2px;
+}
+.sun{
+    fill: #888;
+    transition: var(--transition);
+}
+.moon{
+    left: 52px;
+     fill: #7e7e7e; 
+     transition: var(--transition);
+}
+div{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light);
+    z-index: -1;
+    position: absolute;
+    transition: var(--transition);
+}
+input{
+    display: none;
+}
+label{
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 100px;
+    background-color: #ebebeb; 
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0,0.4) inset, 0px -5px 15px rgba(255, 255, 255, 0.4) inset;
+    transition: var(--transition);
+}
+
+label::after{
+    position: absolute;
+    content: "";
+    display: block;
+    left: 5px;
+    transform: translateY(10%);
+    background-color: var(--light);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0,0.4);
+    transition: var(--transition);
+}
+input:checked +label{
+    background-color: var(--dark);
+}
+input:checked +label::after{
+    left: 52px;
+}
+input:checked +label +div{
+    background-color: var(--dark);
+
+}
+ 

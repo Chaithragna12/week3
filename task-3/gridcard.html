@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid Card Layout</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .parent{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media (max-width:670px) {
+            .parent{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media (max-width:360px) {
+            .parent{
+                grid-template-columns: 1fr;
+            }
+            
+        } 
+     p{
+        background-color: azure;
+        border: 2px solid maroon;
+     }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="card">
+        <h3>tirumala</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDM4uojF5ieRno-S-46c7colOa2LviuajqUA&s" alt="">
+            <p class="p1">Tirumala is a spiritual place in Tirupati district of the Indian state of Andhra Pradesh. It is one of the
+                neighbourhoods of the Tirupati city. The town is a part of Tirupati Urban Development Authority and located in
+                Tirupati (urban) mandal of Tirupati revenue division. It is a hill town where Tirumala Venkateswara Temple is
+                located, a popular shrine of Vishnu. The town is strictly vegetarian</p>
+    </div>
+    <div class="card">
+        <h3>tirumala</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDM4uojF5ieRno-S-46c7colOa2LviuajqUA&s" alt="">
+            <p class="p1">Tirumala is a spiritual place in Tirupati district of the Indian state of Andhra Pradesh. It is one of the
+                neighbourhoods of the Tirupati city. The town is a part of Tirupati Urban Development Authority and located in
+                Tirupati (urban) mandal of Tirupati revenue division. It is a hill town where Tirumala Venkateswara Temple is
+                located, a popular shrine of Vishnu. The town is strictly vegetarian</p>
+    </div>
+    <div class="card">
+        <h3>tirumala</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDM4uojF5ieRno-S-46c7colOa2LviuajqUA&s" alt="">
+        <p class="p1">Tirumala is a spiritual place in Tirupati district of the Indian state of Andhra Pradesh. It is one of the
+            neighbourhoods of the Tirupati city. The town is a part of Tirupati Urban Development Authority and located in
+            Tirupati (urban) mandal of Tirupati revenue division. It is a hill town where Tirumala Venkateswara Temple is
+            located, a popular shrine of Vishnu. The town is strictly vegetarian</p>
+    </div>
+    </div>
+</body>
+</html>

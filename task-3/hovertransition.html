@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hover Effect with Transitions</title>
+    <style>
+        div{
+            max-width: 300px;
+            border: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 2px 2px 3px slategray;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease transform 0.3s ease;
+        }
+        div:hover{
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: translateX(20px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quod.</p>
+    </div>
+    
+</body>
+</html>

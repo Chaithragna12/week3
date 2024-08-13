@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation with Multiple Keyframes</title>
+    <style>
+        div{
+            height: 5rem;
+            width: 5rem;
+            background-color: maroon;
+            position: absolute;
+            /* top: 10px; */
+            border-radius: 50%;
+            /* border: 2px solid black; */
+            animation: bounce 5s infinite;
+        }
+        @keyframes bounce {
+            0%{
+                top:90%
+            }
+            50%{
+                  top: 0%; 
+            }
+            100%{
+                 top: 90%; 
+            }
+            
+        }
+        .c{
+            height: 5rem;
+            width: 5rem;
+            background-color: navy;
+            position: absolute;
+            left: 20rem;
+            /* top: 10px; */
+            border-radius: 50%;
+             /* border: 2px solid black;  */
+            animation: bounceopp 5s infinite;
+        }
+        @keyframes bounceopp {
+            0%{
+                bottom: 90%;
+            }
+            50%{
+                bottom: 0%;
+            }
+            100%{
+                bottom: 90%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="c"></div>
+</body>
+</html>

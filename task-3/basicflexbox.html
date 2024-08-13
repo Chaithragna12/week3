@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Flexbox Layout</title>
+    <style>
+        body{
+             font-size: larger; 
+            padding-top: 10rem;
+        }
+        header,footer{
+            text-align: center;
+        }
+        article{
+            display: flex;
+             flex-direction: column; 
+            /* border: 2px solid black; */
+            align-items: center;
+        }
+        .p1{
+            color: gold;
+        }
+        .p2{
+            color: navy;
+        }
+        .p3{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>This is header</header>
+    <article>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, architecto!</p>
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, id.</p>
+        <p class="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </article>
+    <footer>This is footer</footer>
+</body>
+</html>

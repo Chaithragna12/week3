@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Image with max-width</title>
+    <style>
+        .img{
+             max-width: 100%;
+            width: 70%; 
+             height: auto;
+        }
+         @media (max-width: 768px) {
+            .responsive-image {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .responsive-image {
+                width: 100%;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <img class="img" src="./oie_1515846Dkpz6S5w.jpg" alt="">
+</body>
+</html>
